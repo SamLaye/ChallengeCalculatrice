@@ -9,6 +9,7 @@ input{
 #calculatrice{
 	border: 2px solid #333;
 	background-image: linear-gradient(to right, #ebebeb, #cfcfcf 8%);	
+	min-height: 500px;
 	width: 40%;
 	border-radius: 20px;
 	box-shadow: 3px 3px 3px #333;
