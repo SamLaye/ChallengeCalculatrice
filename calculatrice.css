@@ -7,15 +7,55 @@ input{
 	border-bottom: 1px solid #333;
 }
 #calculatrice{
+	border: 2px solid #333;
+	background-image: linear-gradient(to right, #ebebeb, #cfcfcf 8%);	
 	width: 40%;
 	border-radius: 20px;
+	box-shadow: 3px 3px 3px #333;
+}
+#calculatrice h1{
+	color: #333;
 }	
 button{
 	border: none;
+	box-shadow: 1px 1px 1px #333;
+	background-color: #fff;
+}
+#ce{
+	background-color: #4a8cfa;
+}
+#c{
+	background-color: #fa4a4a;
+}
+#plus{
+	background-color: #4afa73;
+}
+#egal{
+	background-color: #f9eb4a;
+}
+@media screen and (max-width: 990px){
+	#calculatrice{
+/*		width: 70%;*/
+	}
 }
 @media screen and (max-width: 777px){
 	#calculatrice{
 		width: 60%;
+	}
+}
+@media screen and (max-width: 515px){
+	#calculatrice{
+		width: 75%;
+	}
+}
+@media screen and (max-width: 417px){
+	#calculatrice{
+		width: 95%;
+	}
+}
+@media screen and (max-width: 285px){
+	#calculatrice button{
+		font-size: 12px;
 	}
 }
 @media screen and (max-width: 240px){
@@ -23,8 +63,9 @@ button{
 		width: 100%;
 	}
 }
-@media screen and (max-width: 370px){
-	#calculatrice{
-		width: 95%;
+@media screen and (max-width: 235px){
+	#calculatrice button{
+		font-size: 10px;
+		font-weight: bold;
 	}
 }

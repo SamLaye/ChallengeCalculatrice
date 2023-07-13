@@ -94,10 +94,20 @@ function soustraction(){
 }
 
 function calculer(){
-	// La fonction eval() prend une chaîne de caractères en argument et l'évalue comme du code JavaScript.
-	let resultatOperation = eval(operation.value)
+	let premierCaractere = operation.value.charAt(0)
+	console.log(premierCaractere)
+	if(premierCaractere == "/" || premierCaractere == "*")
+	{
+		operation.value = "Syntaxe error"
+		console.log("Syntaxe error")
+	}
+	else
+	{
+		// La fonction eval() prend une chaîne de caractères en argument et l'évalue comme du code JavaScript.
+		let resultatOperation = eval(operation.value)
 
-	resultat.value = resultatOperation;
+		resultat.value = resultatOperation;
+	}
 }
 
 function CE_action(){
@@ -108,3 +118,9 @@ function C_action(){
 	operation.value = zero;
 	resultat.value = zero;
 }
+
+
+// CE QUE J'AI APPRIS
+// _La fonction eval(): qui permet de transformer une expression mathematique présente
+// dans un "string" afin de pouvoir le calculer
+// _La fonction charAt(n): qui renvoie le caractère situé à la position 'n' d'un "string"
