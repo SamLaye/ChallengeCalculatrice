@@ -1,6 +1,7 @@
 input{
 	background-color: transparent;
 	border: none;
+	outline: none;
 }
 #operation{
 	border-bottom: 1px solid #333;
