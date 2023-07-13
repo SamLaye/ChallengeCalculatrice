@@ -6,18 +6,23 @@ input{
 	border-bottom: 1px solid #333;
 }
 #calculatrice{
-	width: 70%;
+	width: 40%;
 	border-radius: 20px;
 }	
 button{
 	border: none;
 }
-@media screen and (max-width: 235px){
+@media screen and (max-width: 777px){
+	#calculatrice{
+		width: 60%;
+	}
+}
+@media screen and (max-width: 240px){
 	#calculatrice{
 		width: 100%;
 	}
 }
-@media screen and (max-width: 315px){
+@media screen and (max-width: 370px){
 	#calculatrice{
 		width: 95%;
 	}
