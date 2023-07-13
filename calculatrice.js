@@ -94,12 +94,10 @@ function soustraction(){
 }
 
 function calculer(){
-	let premierCaractere = operation.value.charAt(0)
-	console.log(premierCaractere)
+	let premierCaractere = operation.value.charAt(0);
 	if(premierCaractere == "/" || premierCaractere == "*")
 	{
-		operation.value = "Syntaxe error"
-		console.log("Syntaxe error")
+		operation.value = "Syntaxe error";
 	}
 	else
 	{
@@ -115,7 +113,7 @@ function CE_action(){
 }
 
 function C_action(){
-	operation.value = zero;
+	operation.value = "";
 	resultat.value = zero;
 }
 
