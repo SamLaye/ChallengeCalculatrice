@@ -1,0 +1,24 @@
+input{
+	background-color: transparent;
+	border: none;
+}
+#operation{
+	border-bottom: 1px solid #333;
+}
+#calculatrice{
+	width: 70%;
+	border-radius: 20px;
+}	
+button{
+	border: none;
+}
+@media screen and (max-width: 235px){
+	#calculatrice{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 315px){
+	#calculatrice{
+		width: 95%;
+	}
+}

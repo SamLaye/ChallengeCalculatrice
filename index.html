@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Il faut l'ajouter avant les autres fichiers CSS, afin que vos styles remplacent ceux de Bootstrap par défaut. -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="calculatrice.css">
+	<title>Ma Calculatrice</title>
+
+	<!-- Lien icone bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="container">
+		<center>
+			<div class="row bg-danger align-self-center justify-content-center mt-4" id="calculatrice">
+				<h1 class="text-center text-capitalize my-4 text-white">Ma calculatrice</h1>
+				<div class="row mb-2 justify-content-center rounded bg-white mx-1 w-75">
+					<input type="text" name="" class="col-11 text-end" id="operation">
+					<input type="text" name="" class="col-11 fw-bold" id="resultat">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col mb-4 d-flex justify-content-center">
+						<div class="row p-1 justify-content-center">
+							<button type="button" class="col-3 me-1 mt-1" onclick="afficher9()">9</button>
+							<button type="button" class="col-3 me-1 mt-1" onclick="afficher8()">8</button>
+							<button type="button" class="col-3 mt-1" onclick="afficher7()">7</button>
+
+							<button type="button" class="col-3 me-1 mt-2" onclick="afficher6()">6</button>
+							<button type="button" class="col-3 me-1 mt-2" onclick="afficher5()">5</button>
+							<button type="button" class="col-3 mt-2" onclick="afficher4()">4</button>
+
+							<button type="button" class="col-3 me-1 mt-2" onclick="afficher3()">3</button>
+							<button type="button" class="col-3 me-1 mt-2" onclick="afficher2()">2</button>
+							<button type="button" class="col-3 mt-2" onclick="afficher1()">1</button>
+
+							<button type="button" class="col-6 me-1 mt-2" onclick="afficher0()">0</button>
+							<button type="button" class="col-3 ms-1 mt-2" onclick="afficherPoint()">.</button>
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="row p-1 justify-content-center">
+							<button type="button" class="col-5 text-uppercase ms-1 mt-2" onclick="CE_action()">ce</button>
+							<button type="button" class="col-5 text-uppercase ms-1 mt-2" onclick="C_action()">c</button>
+
+							<button type="button" class="col-5 ms-1 mt-2" onclick="division()">/</button>
+							<button type="button" class="col-5 ms-1 mt-2" onclick="multiplication()">x</button>
+
+							<button type="button" class="col-5 ms-1 mt-2" onclick="soustraction()">-</button>
+							<button type="button" class="col-5 ms-1 mt-2" onclick="addition()">+</button>
+
+							<button type="button" class="col-10 mt-2 ms-1" onclick="calculer()">=</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</center>	
+	</div>
+
+	<script type="text/javascript" src="calculatrice.js"></script>
+</body>
+</html>
